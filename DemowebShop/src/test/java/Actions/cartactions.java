@@ -1,7 +1,12 @@
 package Actions;
 
 import java.io.IOException;
+import java.time.Duration;
+
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import Pages.cartpages;
 import utilities.HelperClass;
 import utilities.exceldata;
@@ -32,9 +37,9 @@ public class cartactions {
     public boolean isProductInCart() {
         return objcart.cart.getText().contains(product1);
     }
-    public void clickwishlist()
-    {
-    	objcart.wishlist.click();
+    public void clickwishlist() {
+        WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.elementToBeClickable(objcart.wishlist)).click();
     }
     public String gettextalbum()
     {
