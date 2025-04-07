@@ -6,7 +6,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 @Listeners(utilities.Listenerclass.class)
 @CucumberOptions(
-    features = {"src/test/resources/feature/login.feature","src/test/resources/feature/Newsletter.feature"},
+    features = {"src/test/resources/feature/login.feature","src/test/resources/feature/Newsletter.feature","src/test/resources/feature/cart.feature"},
     glue = "definition",
     plugin = {
         "pretty",
