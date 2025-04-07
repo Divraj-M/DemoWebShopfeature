@@ -34,7 +34,10 @@ public void user_enter_the_valid_email_id_to_the_newsletter(io.cucumber.datatabl
 @Then("user should see the Thank you message")
 public void user_should_see_the_thank_you_message() {
 	String act="Thank you for signing up! A verification email has been sent. We appreciate your interest.";
-	Assert.assertEquals(act, obj.getstringofnews());
+	System.out.println("act:"+act);
+	System.out.println("exp:"+obj.getstringofnews());
+	String exp=obj.getstringofnews();
+	Assert.assertEquals(act, exp);
 	
     
 }
@@ -49,8 +52,11 @@ public void user_enter_the_invalid_email_id_to_the_newsletter(io.cucumber.datata
 
 @Then("user should see the message as enter valid email")
 public void user_should_see_the_message_as_enter_valid_email() {
-	String act="Enter valid email";
-	Assert.assertEquals(act, obj.getstringofnews());
+	String act1="Enter valid email";
+	System.out.println("act:"+act1);
+	System.out.println("exp:"+obj.getstringofnews());
+	String exp=obj.getstringofnews();
+	Assert.assertEquals(act1, exp);
 	
     
 }

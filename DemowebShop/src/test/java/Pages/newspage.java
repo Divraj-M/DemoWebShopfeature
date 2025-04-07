@@ -11,7 +11,7 @@ public class newspage {
 	@FindBy(xpath="//input[@id=\"newsletter-subscribe-button\"]")
 	public WebElement subscribe;
 	
-	@FindBy(xpath="//*[@id=\"newsletter-result-block\"]")
+	@FindBy(css ="#newsletter-result-block")
 	public WebElement textaftersubscribe;
 	
 

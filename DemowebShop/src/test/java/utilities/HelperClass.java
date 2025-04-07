@@ -39,7 +39,7 @@ public class HelperClass {
             }
 
             driver.manage().window().maximize();
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
         } catch (IOException e) {
             e.printStackTrace();
