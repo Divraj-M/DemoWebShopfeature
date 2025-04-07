@@ -18,5 +18,6 @@ public class cartpages {
 	
 	@FindBy(xpath="//a[@class=\"product-name\"]")
 	public WebElement insidewishlist;
+	
 
 }
