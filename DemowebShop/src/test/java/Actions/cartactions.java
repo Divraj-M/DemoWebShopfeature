@@ -39,7 +39,7 @@ public class cartactions {
     }
     public void clickwishlist() {
         WebDriverWait wait = new WebDriverWait(HelperClass.getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.elementToBeClickable(objcart.wishlist)).click();
+        wait.until(ExpectedConditions.visibilityOf(objcart.wishlist)).click();
     }
     public String gettextalbum()
     {
