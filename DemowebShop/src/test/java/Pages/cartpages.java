@@ -12,8 +12,8 @@ public class cartpages {
 	
 	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
 	public WebElement addtocart;
-	
-	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
+
+	@FindBy(xpath="/html/body/div[4]/div[2]/div[1]/div[3]/ul/li[4]/a")
 	public WebElement wishlist;
 	
 	@FindBy(xpath = "//span[@class='cart-qty']")
