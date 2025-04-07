@@ -5,8 +5,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class newspage {
 	
-	@FindBy(id="verify digital download product added to cart")
-	public WebElement cart;
+	@FindBy(xpath="//input[@name=\"NewsletterEmail\"]")
+	public WebElement inputnews;
+	
+	@FindBy(xpath="//input[@id=\"newsletter-subscribe-button\"]")
+	public WebElement subscribe;
+	
+	@FindBy(xpath="//*[@id=\"newsletter-result-block\"]")
+	public WebElement textaftersubscribe;
 	
 
 }

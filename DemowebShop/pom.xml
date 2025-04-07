@@ -99,6 +99,11 @@
     <artifactId>extentreports-cucumber7-adapter</artifactId>
     <version>1.14.0</version>
 </dependency>
+  	<dependency>
+  		<groupId>Com.cucumber</groupId>
+  		<artifactId>Cucumber_Basics</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
     <build>

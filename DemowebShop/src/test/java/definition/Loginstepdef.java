@@ -5,7 +5,6 @@ import org.testng.Assert;
 import Actions.loginaction;
 import io.cucumber.java.en.*;
 import utilities.HelperClass;
-
 public class Loginstepdef {
 
     loginaction objaction;
@@ -14,9 +13,10 @@ public class Loginstepdef {
     public void i_am_on_the_demo_web_shop_website() {
         HelperClass.setupDriver();
         HelperClass.openPage("https://demowebshop.tricentis.com/");
-        objaction = new loginaction(); // Initialize AFTER driver is ready
+        objaction = new loginaction();
     }
-
+    
+    
     @When("I click Login and enter valid email and valid password")
     public void i_click_login_and_enter_valid_email_and_valid_password(io.cucumber.datatable.DataTable dataTable) {
         objaction.HomeLogin();
