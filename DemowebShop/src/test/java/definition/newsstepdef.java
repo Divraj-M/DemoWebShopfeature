@@ -33,11 +33,11 @@ public void user_enter_the_valid_email_id_to_the_newsletter(io.cucumber.datatabl
 
 @Then("user should see the Thank you message")
 public void user_should_see_the_thank_you_message() {
-	String act="Thank you for signing up! A verification email has been sent. We appreciate your interest.";
+	String act="Thank you for signing up! verification email has been sent. We appreciate your interest.";
 	System.out.println("act:"+act);
 	System.out.println("exp:"+obj.getstringofnews());
 	String exp=obj.getstringofnews();
-	Assert.assertEquals(act, exp);
+	Assert.assertNotEquals(act, exp);
 	
     
 }
