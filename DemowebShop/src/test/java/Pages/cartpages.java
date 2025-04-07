@@ -13,7 +13,7 @@ public class cartpages {
 	@FindBy(xpath="//input[@class=\"button-2 product-box-add-to-cart-button\"]")
 	public WebElement addtocart;
 	
-	@FindBy(xpath="//*[@id=\"topcartlink\"]/a")
+	@FindBy(xpath="//a[@class=\"ico-cart\"]")
 	public WebElement wishlist;
 	
 	@FindBy(xpath = "//span[@class='cart-qty']")
