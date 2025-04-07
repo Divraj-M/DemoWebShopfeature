@@ -12,9 +12,10 @@ Given I am on the DemoWebShop website page
 	
 	
 	@NewsletterInvalid
-	Scenario: To pass the invalid email to the newsletter
-	When user enter the invalid email id to the newsletter
-	|abc    |
-	Then user should see the message as enter valid email
-	
+Scenario: To pass the invalid email to the newsletter
+  Given I am on the DemoWebShop website page
+  When user enter the invalid email id to the newsletter
+    | hello@ |
+  Then user should see the message as enter valid email
+
 	

@@ -14,7 +14,6 @@ public class HelperClass {
     private static WebDriver driver;
     private static HelperClass help;
     private String web;
-
     private HelperClass() {
         try {
             

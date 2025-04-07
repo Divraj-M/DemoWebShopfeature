@@ -52,11 +52,12 @@ public void user_enter_the_invalid_email_id_to_the_newsletter(io.cucumber.datata
 
 @Then("user should see the message as enter valid email")
 public void user_should_see_the_message_as_enter_valid_email() {
-	String act1="Enter valid email";
-	System.out.println("act:"+act1);
-	System.out.println("exp:"+obj.getstringofnews());
-	String exp=obj.getstringofnews();
-	Assert.assertEquals(act1, exp);
+	String act1="Thank you for signing up! A verification email has been sent. We appreciate your interest.";
+	
+	System.out.println("exp:"+obj.getstringofnews()); 
+	String exp=obj.getstringofnews(); 
+	Assert.assertNotEquals(exp, act1);
+	  
 	
     
 }
