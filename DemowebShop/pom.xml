@@ -262,7 +262,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Masterthought HTML Report -->
+            <!-- Masterthought Cucumber Report Plugin -->
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -278,7 +278,7 @@
                             <projectName>DemoWebShop</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
                             <jsonFiles>
-                                <param>${project.build.directory}/cucumber-reports.json</param>
+                                <param>${project.build.directory}/cucumber-reports/cucumber.json</param>
                             </jsonFiles>
                         </configuration>
                     </execution>
